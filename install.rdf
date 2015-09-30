@@ -6,7 +6,7 @@
     <em:type>2</em:type>
     <em:version>0.1alpha</em:version>
     <em:name>Lightning Colors Reminder</em:name>
-    <em:description>Show the calendar color on Lightning reminders.</em:description>
+    <em:description>Let's show the calendar color on Lightning reminders!</em:description>
     <em:iconURL>chrome://ltngcolrem/skin/mzcr-icon.png</em:iconURL>
     <em:icon64URL>chrome://ltngcolrem/skin/mzcr-icon64.png</em:icon64URL>
     <em:creator>Mic (m@micz.it)</em:creator>
@@ -15,7 +15,7 @@
     <em:localized>
       <Description>
         <em:locale>it</em:locale>
-        <em:name>Mostra il colore del calendario negli avvisi di Lightning.</em:name>
+        <em:name>Mostriamo il colore del calendario negli avvisi di Lightning!</em:name>
         <em:description>Lightning Colors Reminder</em:description>
         <em:creator>Mic (m@micz.it)</em:creator>
         <em:contributor></em:contributor>
