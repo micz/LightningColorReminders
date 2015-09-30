@@ -1,0 +1,6 @@
+content   ltngcolrem                 chrome/content/
+locale    ltngcolrem   en-US         chrome/locale/en-US/
+
+skin ltngcolrem default chrome/skin/
+
+overlay chrome://calendar/content/calendar-alarm-dialog.xul chrome://ltngcolrem/content/mzcr-overlay.xul

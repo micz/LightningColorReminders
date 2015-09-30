@@ -1,0 +1,6 @@
+-= Lightning Color Reminders Thunderbird Addon Release Notes =-
+
+==========
+Version 1.0 - ??/??/2015
+- First release.
+==========
