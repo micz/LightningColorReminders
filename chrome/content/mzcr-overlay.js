@@ -28,14 +28,11 @@ var miczLightningColorReminders = {
 		 }
 	},
 
-//aggiungere un observer per questo: http://mxr.mozilla.org/comm-central/source/calendar/base/src/calAlarmMonitor.js#72
-//per caricare i colori anche se la finestra è già aperta
-
 	addCalendarColor:function(node,XUL){
 		//dump('>>>>>>> node: '+JSON.stringify(node)+'\r\n');
-		dump('>>>>>>> calendar name: '+JSON.stringify(node.item.calendar.name)+'\r\n');
-		dump('>>>>>>> calendar id: '+JSON.stringify(node.item.calendar.id)+'\r\n');
-		dump('>>>>>>> calendar color: '+JSON.stringify(node.item.calendar.getProperty("color"))+'\r\n');
+		//dump('>>>>>>> calendar name: '+JSON.stringify(node.item.calendar.name)+'\r\n');
+		//dump('>>>>>>> calendar id: '+JSON.stringify(node.item.calendar.id)+'\r\n');
+		//dump('>>>>>>> calendar color: '+JSON.stringify(node.item.calendar.getProperty("color"))+'\r\n');
 		let cal_color=node.item.calendar.getProperty("color")||'a8c2e1';
 		node.setAttribute('style','border-left:7px solid '+cal_color+';');
 		//let cal_color_item = document.createElementNS(XUL, "vbox");
@@ -51,7 +48,7 @@ var miczLightningColorReminders = {
 
 miczLightningColorReminders.alarmEventObserver = {
 	onAlarm: function(item,alarm){
-		dump('>>>>>>> [observer] calendar name: '+JSON.stringify(item.calendar.name)+'\r\n');
+		//dump('>>>>>>> [observer] calendar name: '+JSON.stringify(item.calendar.name)+'\r\n');
 		setTimeout(miczLightningColorReminders.refreshAlertsColor,10);
 	}
 };
