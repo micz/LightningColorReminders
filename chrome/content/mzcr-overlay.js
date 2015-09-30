@@ -11,12 +11,12 @@ var miczLightningColorReminders = {
 		 // Make a copy of the child nodes as they get modified live
 		 for each (let node in Array.slice(alarmRichlist.childNodes)) {
 			// Check if the node is a valid alarm and is still part of DOM
-			if (node.parentNode && node.item && node.alarm && !(node.item.parentItem.hashId in parentItems)) {
+			//if (node.parentNode && node.item && node.alarm && !(node.item.parentItem.hashId in parentItems)) {
 				// We only need to acknowledge one occurrence for repeating items
-				parentItems[node.item.parentItem.hashId] = node.item.parentItem;
+				//parentItems[node.item.parentItem.hashId] = node.item.parentItem;
 				// Add colors
-				miczLightningColorReminders.addCalendarColor(node,XUL);
-			}
+			miczLightningColorReminders.addCalendarColor(node,XUL);
+			//}
 		 }
 	},
 
@@ -29,6 +29,7 @@ var miczLightningColorReminders = {
 		dump('>>>>>>> calendar id: '+JSON.stringify(node.item.calendar.id)+'\r\n');
 		dump('>>>>>>> calendar color: '+JSON.stringify(node.item.calendar.getProperty("color"))+'\r\n');
 		let cal_color=node.item.calendar.getProperty("color")||'a8c2e1';
+		node.setAttribute('style','border-left:7px solid '+cal_color+';');
 		//let cal_color_item = document.createElementNS(XUL, "vbox");
 		//cal_color_item.setAttribute('style','width:7px;background-color:'+cal_color+';');
 		//node.appendChild(cal_color_item);
@@ -36,7 +37,6 @@ var miczLightningColorReminders = {
 		//node.boxObject.firstChild.appendChild(cal_color_item);
 		//node.insertBefore(cal_color_item,document.getAnonymousNodes(node)[0]);
 		//let alarm_item=node.firstChild;
-		node.setAttribute('style','border-left:7px solid '+cal_color+';');
 	},
 
 };
