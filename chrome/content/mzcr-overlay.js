@@ -3,8 +3,16 @@
 var miczLightningColorReminders = {
 
 	onLoad:function(){
-		const XUL = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 		window.removeEventListener("load", miczLightningColorReminders.onLoad, false);
+
+		miczLightningColorReminders.refreshAlertsColor();
+
+		let alarmService = Components.classes["@mozilla.org/calendar/alarm-service;1"].getService(Components.interfaces.calIAlarmService);
+		alarmService.addObserver(miczLightningColorReminders.alarmEventObserver);
+	},
+
+	refreshAlertsColor:function(){
+		const XUL = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 		let alarmRichlist = document.getElementById("alarm-richlist");
 		let parentItems = {};
 
@@ -39,6 +47,13 @@ var miczLightningColorReminders = {
 		//let alarm_item=node.firstChild;
 	},
 
+};
+
+miczLightningColorReminders.alarmEventObserver = {
+	onAlarm: function(item,alarm){
+		dump('>>>>>>> [observer] calendar name: '+JSON.stringify(item.calendar.name)+'\r\n');
+		setTimeout(miczLightningColorReminders.refreshAlertsColor,10);
+	}
 };
 
 window.addEventListener("load", miczLightningColorReminders.onLoad, false);
