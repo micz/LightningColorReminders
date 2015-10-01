@@ -7,7 +7,7 @@
     <em:version>1.1alpha</em:version>
     <em:name>Lightning Colors Reminder</em:name>
     <em:description>Let's show the calendar color on Lightning reminders!</em:description>
-    <em:iconURL>chrome://ltngcolrem/skin/mzcr-icon.png</em:iconURL>
+    <em:iconURL>chrome://ltngcolrem/skin/mzcr-icon32.png</em:iconURL>
     <em:icon64URL>chrome://ltngcolrem/skin/mzcr-icon64.png</em:icon64URL>
     <em:creator>Mic (m@micz.it)</em:creator>
     <em:contributor></em:contributor>
