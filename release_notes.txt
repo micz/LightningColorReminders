@@ -3,6 +3,8 @@
 ==========
 Version 1.1 - ??/??/2015
 - Addon manager icon display fixed.
+- Minor bug fixes.
+- Added color position and thickness options.
 -
 ==========
 Version 1.0 - 30/09/2015
