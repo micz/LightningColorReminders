@@ -38,7 +38,9 @@ miczLightningColorReminders.alarmEventObserver = {
 	onAlarm: function(item,alarm){
 		//dump('>>>>>>> [observer] calendar name: '+JSON.stringify(item.calendar.name)+'\r\n');
 		setTimeout(miczLightningColorReminders.refreshAlertsColor,10);
-	}
+	},
+
+	onRemoveAlarmsByItem:function(aItem){},
 };
 
 window.addEventListener("load", miczLightningColorReminders.onLoad, false);
