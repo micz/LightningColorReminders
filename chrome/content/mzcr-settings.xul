@@ -21,7 +21,7 @@
         <tabpanel id="crtab" orient="vertical">
           <label control="symbol" value="&LightningColorReminders.GlobalDescSettingTab;"/>
           <label control="symbol" value=" "/>
-            <hbox>
+            <hbox align="center">
 			 <menulist  id="LightningColorReminders.Thickness_input" preference="LightningColorReminders.Thickness" >
 			  <menupopup>
 				<menuitem label="1" value="1" />
@@ -39,7 +39,7 @@
            <label control="symbol" value="&LightningColorReminders.Thickness.label;"/>
           </hbox>
           <label control="symbol" value=" "/>
-          <hbox>
+          <hbox align="center">
 			 <menulist  id="LightningColorReminders.Position_input" preference="LightningColorReminders.Position" >
 			  <menupopup>
 				<menuitem label="&LightningColorReminders.Position.top;" value="top" />
