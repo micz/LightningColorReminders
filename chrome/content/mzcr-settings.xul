@@ -11,6 +11,9 @@
       <preference id="LightningColorReminders.Thickness"
         name="extensions.LightningColorReminders.Thickness"
         type="int"/>
+      <preference id="LightningColorReminders.Position"
+        name="extensions.LightningColorReminders.Position"
+        type="string"/>
     </preferences>
     <tabbox id="cr_tabbox">
       <tabs>
