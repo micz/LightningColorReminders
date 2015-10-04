@@ -59,7 +59,7 @@
         <tabpanel id="crtab_info" orient="vertical">
 	  <description class="mzcr-desc-big">&LightningColorReminders.InfoMainDesc;</description>
           <label control="symbol" value=" "/>
-	  <label value="&LightningColorReminders.DonateLink;" class="text-link mzcr-donate" href="http://micz.it/thunderdbird-addon-lightning-reminder-left-buttons/donate/"/>
+	  <label value="&LightningColorReminders.DonateLink;" class="text-link mzcr-donate" href="http://micz.it/thunderdbird-addon-lightning-color-reminders/donate/"/>
         </tabpanel>
       </tabpanels>
     </tabbox>
