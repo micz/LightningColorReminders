@@ -42,6 +42,8 @@ miczLightningColorReminders.alarmEventObserver = {
 	},
 
 	onRemoveAlarmsByItem:function(aItem){},
+	onRemoveAlarmsByCalendar:function(aCalendar){},
+	onAlarmsLoaded:function(aCalendar){}
 };
 
 window.addEventListener("load", miczLightningColorReminders.onLoad, false);
