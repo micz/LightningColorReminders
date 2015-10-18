@@ -2,6 +2,9 @@
 
 ==========
 Version 1.2 - ??/??/2015
+- Italian (it) locale added.
+- Chinese (Simplified) (zh-CN) locale added, thanks to yfdyh000 (from BabelZilla.org).
+- Dutch (nl) locale added, thanks to markh (from BabelZilla.org).
 -
 ==========
 Version 1.1 - 04/10/2015
