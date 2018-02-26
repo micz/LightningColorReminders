@@ -18,7 +18,7 @@ var miczLightningColorReminders = {
 		let parentItems = {};
 
 		 // Make a copy of the child nodes as they get modified live
-		 for each (let node in Array.slice(alarmRichlist.childNodes)){
+		 for (let node of Array.slice(alarmRichlist.childNodes)){
 			miczLightningColorReminders.addCalendarColor(node,XUL);
 		 }
 	},
