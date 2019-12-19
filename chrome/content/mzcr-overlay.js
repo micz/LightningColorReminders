@@ -28,7 +28,7 @@ var miczLightningColorReminders = {
 		//dump('>>>>>>> calendar name: '+JSON.stringify(node.item.calendar.name)+'\r\n');
 		//dump('>>>>>>> calendar id: '+JSON.stringify(node.item.calendar.id)+'\r\n');
 		//dump('>>>>>>> calendar color: '+JSON.stringify(node.item.calendar.getProperty("color"))+'\r\n');
-		let cal_color=node.item.calendar.getProperty("color")||'a8c2e1';
+		let cal_color=node.item.calendar.getProperty("color")||'#a8c2e1';
 		node.setAttribute('style','border-'+miczLightningColorRemindersPrefsUtils.colorPosition+':'+miczLightningColorRemindersPrefsUtils.colorThickness+'px solid '+cal_color+';');
 	},
 
